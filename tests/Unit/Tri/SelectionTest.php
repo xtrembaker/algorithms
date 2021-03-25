@@ -16,13 +16,13 @@ class SelectionTest extends TestCase
         $this->selection = new Selection();
     }
 
-    public function test_tri_selection(): void
+    public function test_tri_selection_algorithms(): void
     {
         $input = [5, 2, 4, 6, 1, 3];
         $this->assertEquals([1,2,3,4,5,6],($this->selection)($input));
     }
 
-    public function test_tri_insertion_invariant_initialisation(): void
+    public function test_tri_selection_invariant_initialisation(): void
     {
         $input = [5];
         $output = ($this->selection)($input);

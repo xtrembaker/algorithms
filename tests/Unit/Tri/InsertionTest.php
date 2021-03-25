@@ -17,7 +17,7 @@ class InsertionTest extends TestCase
 
     }
 
-    public function test_tri_insertion(): void
+    public function test_tri_insertion_algorithms(): void
     {
         $input = [5, 2, 4, 6, 1, 3];
         $output = ($this->insertion)($input);
