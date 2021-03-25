@@ -2,19 +2,19 @@
 
 namespace Tests\Tri;
 
-use Closure;
 use PHPUnit\Framework\TestCase;
-use SebastianBergmann\CodeCoverage\Directory;
+use Xtrembaker\Algorithms\Tri\Insertion;
 
 class InsertionTest extends TestCase
 {
-    private Closure $insertion;
+    private Insertion $insertion;
 
     protected function setUp(): void
     {
         parent::setUp();
 
-        $this->insertion = require dirname(__DIR__, 3).DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'Tri'.DIRECTORY_SEPARATOR.'insertion.php';
+        $this->insertion = new Insertion();
+
     }
 
     public function test_tri_insertion(): void
@@ -34,10 +34,12 @@ class InsertionTest extends TestCase
     public function test_tri_insertion_invariant_conservation(): void
     {
         // @TODO
+        $this->markTestIncomplete();
     }
 
     public function test_tri_insertion_invariant_terminaison(): void
     {
         // @TODO
+        $this->markTestIncomplete();
     }
 }
